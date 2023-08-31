@@ -12,7 +12,27 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+  var numeros=[];
+  
+  for (let index = 0; index < array.length; index++) {
+      
+    if (Number.isInteger(array[index])) {
+      //array.splice(index,1);
+      //delete(array[index]);
+      numeros.push(array[index])
+    }else{
+      console.log("n - " + index);
+    }
+    
+  }
+  return numeros;
+  
 }
+
+var num=["dff",4,5,6,44,33,"gg","hh","gh",65,"ee",44];
+
+console.log(soloNumeros(num));
+//console.log(numeros);
 
 // No modifiques nada debajo de esta linea //
 
